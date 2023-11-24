@@ -11,6 +11,7 @@ import MensajePage from '../pages/ui/MensajePage';
 import CalendarioPage from '../pages/ui/CalendarioPage';
 import TechSkillsPage from '../pages/ui/TechSkillsPage';
 import ProjectPage from '../pages/ui/ProjectPage';
+import NotFoundPage from '../components/layout/NotFoundPage'
 import '../styles/globals.css';
 
 export const AppRouter = () => {
@@ -31,7 +32,7 @@ export const AppRouter = () => {
             <Route element={<PublicRoutes />}>
                 <Route path="/auth/login" element={<LoginPage />} />
             </Route>
-            {/* <Route path="*" element={<NotFoundPage />} /> */}
+            <Route path="*" element={<NotFoundPage />} />
         </Routes>
     );
 }
