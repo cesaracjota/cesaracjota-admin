@@ -18,8 +18,8 @@ export const AppRouter = () => {
 
     return (
         <Routes>
-            <Route element={<PrivateRoutes />} >
-                <Route path="/" element={<AdminPage />} />
+            <Route path="/" exact element={<PrivateRoutes />} >
+                <Route path="/" exact element={<AdminPage />} />
                 <Route path="/usuarios" element={<UsuarioPage />} />
                 <Route path="/admin/calendario" element={<CalendarioPage />} />
                 <Route path="/configuracion" element={<ConfiguracionPage />} />

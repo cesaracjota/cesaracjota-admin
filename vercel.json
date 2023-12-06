@@ -4,10 +4,6 @@
         {
             "src": "/src/(.*)",
             "dest": "/index.html"
-        },
-        {
-            "src": "^/(certificados|otraRuta|otraRutaMas)/(.*)$",
-            "dest": "/$1/index.html"
         }
     ]
 }
